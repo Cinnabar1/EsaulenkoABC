@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="/static/css/bootstrap.min.css">
+    <title>Title</title>
+</head>
+<body>
+{% include "Nav.html" %}
+<div class="container">
+    <!--
+    <div class="table">
+        <h2>преподаватели</h2>
+        <table class="table table-hover">
+    <thead>
+    <tr>
+        <th scope="col">Фамилия</th>
+        <th scope="col">Имя</th>
+        <th scope="col">Отчество</th>
+    </tr>
+    </thead>
+    <tbody>
+    {% for lecturer in lecturers %}
+    <tr class="table-light">
+        <td>{{ lecturer.last_name }}</td>
+        <td>{{ lecturer.first_name }}</td>
+        <td>{{ lecturer.patronymic }}</td>
+    {% endfor %}
+    </tr>
+    </tbody>
+</table>
+ -->
+    </div>
+    <div class="table">
+        <h3>Интервалы</h3>
+        <table class="table table-hover">
+    <thead>
+    <tr>
+        <th scope="col">Время</th>
+    </tr>
+    </thead>
+   <tr class="table-light">
+    {% for interval in intervals %}
+
+        <td>{{ interval.time }}</td>
+    {% endfor %}
+    </tr>
+    </tbody>
+</table>
+    </div>
+</div>
+</body>
+</html>
